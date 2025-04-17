@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+body{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-bg {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://miro.medium.com/v2/resize:fit:3640/1*q8HNVIql60d46VWjI5i2CQ.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(90deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(90deg);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bounce-animation {
+  animation: bounce 1s infinite;
+}
+
+
+.vmtable{
+display: flex;
+}
+
+.vmtable .one{
+width: 50%;
+}
+
+@media(max-width: 1200px) {
+.vmtable{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.vmtable .one{
+width: 100%;
+}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menubar{
+display: none;
+}
+
+.close {
+display: none;
+}
+
+@media(max-width: 800px){
+.hero{
+  height: 60vh;
+}
 }
