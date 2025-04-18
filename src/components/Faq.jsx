@@ -43,7 +43,7 @@ const FAQ = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="border border-blue-900 rounded-lg p-4 bg-opacity-0 transition-all duration-300"
+            className="border border-blue-900 hover:bg-[#11112fad] rounded-lg p-4 bg-opacity-0 transition-all duration-300"
           >
             <button
               onClick={() => toggleFAQ(index)}
