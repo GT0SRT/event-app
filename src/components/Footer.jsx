@@ -44,7 +44,7 @@ const Footer = () => {
                     alt=''
                     className='w-20 h-20 md:w-48 md:h-48'
                 />
-                <h1 className='text-[#24100c] text-2xl md:text-3xl font-bold'>E-Summit'25</h1>
+                <h1 className='text-[#101656] text-2xl md:text-3xl font-bold'>E-Summit'25</h1>
             </div>
             
             <div className="flex-1 mt-3 ml-[5%]">
